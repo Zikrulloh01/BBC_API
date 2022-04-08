@@ -1,0 +1,89 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-08T02:55:12.051Z",
+        "line": 7,
+        "name": "Count currencies and verify GBP",
+        "description": "",
+        "id": "verify-currency-count--and-existence;count-currencies-and-verify-gbp",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4285028400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Go to api endpoint",
+            "match": {
+              "location": "api_steps.go_to_api_endpoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8314000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify status code is \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 22
+                }
+              ],
+              "location": "api_steps.verify_status_code_is(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 833490000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Count number of currencies",
+            "match": {
+              "location": "api_steps.count_number_of_currencies()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2469500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Verify \"GBP\" exists in the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GBP\"",
+                  "offset": 7
+                }
+              ],
+              "location": "api_steps.verify_exists_in_the_list(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Verify currency count, and existence",
+    "description": "",
+    "id": "verify-currency-count--and-existence",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/currency.feature",
+    "tags": []
+  }
+]
