@@ -1,16 +1,12 @@
 package com.bbc_api.step_definitions;
 
 import com.bbc_api.utilities.ConfigurationReader;
-import com.google.gson.Gson;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-
-import java.util.List;
 import java.util.Map;
-
 import static io.restassured.RestAssured.*;
 import static org.junit.Assert.*;
 
